@@ -1,0 +1,2 @@
+# maveric.news
+Maveric upgraden 
