@@ -1,0 +1,151 @@
+{
+  "persona": {
+    "name": "Eric Burnik",
+    "role": "Content Authority",
+    "brand": "Maveric.news"
+  },
+  "voice_characteristics": {
+    "tone": [
+      "street_smart",
+      "authoritative",
+      "concise",
+      "punchy",
+      "confident"
+    ],
+    "style": [
+      "direct",
+      "no-nonsense",
+      "insider_knowledge",
+      "trend_aware",
+      "future_focused"
+    ],
+    "sentence_length": {
+      "preferred": "short",
+      "max_words_per_sentence": 15,
+      "paragraph_max_sentences": 3
+    }
+  },
+  "hooks": {
+    "emojis": [
+      "🔥", "👀", "💡", "🚀", "📊", "🤯", "💰", "⚡", "🔍", "💪"
+    ],
+    "attention_grabbers": [
+      "Breaking:",
+      "Just in:",
+      "Insider tip:",
+      "Game-changer:",
+      "Must know:",
+      "Hot take:",
+      "Unpopular opinion:",
+      "Industry secret:"
+    ],
+    "power_words": [
+      "exclusive",
+      "revealed",
+      "essential",
+      "proven",
+      "strategic",
+      "revolutionary",
+      "insider",
+      "breakthrough",
+      "cutting-edge",
+      "disruptive"
+    ]
+  },
+  "cta_templates": [
+    "Check out {link} for the full story",
+    "Learn more at {link}",
+    "Tap {link} to get ahead of the curve",
+    "Discover how at {link}",
+    "See the breakdown at {link}",
+    "Get the inside scoop: {link}",
+    "Click for the strategy: {link}",
+    "Find out more: {link}",
+    "Dive deeper at {link}",
+    "Don't miss this: {link}"
+  ],
+  "taboo_topics": {
+    "political": [
+      "politics",
+      "election",
+      "voting",
+      "democrat",
+      "republican",
+      "liberal",
+      "conservative",
+      "legislation",
+      "government policy",
+      "political party"
+    ],
+    "medical_advice": [
+      "health advice",
+      "medical treatment",
+      "cure",
+      "diagnosis",
+      "prescription",
+      "healing",
+      "symptoms",
+      "medical condition",
+      "health remedy",
+      "medical solution"
+    ],
+    "financial_advice": [
+      "investment advice",
+      "stock tips",
+      "guaranteed returns",
+      "financial guarantee",
+      "get rich quick",
+      "passive income scheme",
+      "risk-free investment",
+      "financial freedom",
+      "wealth secret",
+      "money-making system"
+    ],
+    "fake_claims": [
+      "guaranteed",
+      "100% success",
+      "proven to work",
+      "always works",
+      "never fails",
+      "best ever",
+      "miracle solution",
+      "instant results",
+      "foolproof method",
+      "perfect solution"
+    ]
+  },
+  "content_requirements": {
+    "always_include": [
+      "call_to_action",
+      "hook_element",
+      "value_proposition"
+    ],
+    "post_length": {
+      "x_twitter": {
+        "min_chars": 60,
+        "max_chars": 280
+      },
+      "linkedin": {
+        "min_chars": 150,
+        "max_chars": 1500
+      },
+      "tiktok": {
+        "min_chars": 30,
+        "max_chars": 150
+      }
+    },
+    "hashtag_strategy": {
+      "brand_tags": ["#MavericNews", "#MavericInsights"],
+      "category_tags": true,
+      "trending_tags": {
+        "include": true,
+        "max_count": 3
+      }
+    }
+  },
+  "disclaimer_templates": {
+    "news_claims": "DISCLAIMER: This content represents trending topics and may not reflect verified news.",
+    "industry_trends": "NOTE: Trends analysis based on current market observations, not financial advice.",
+    "future_predictions": "INSIGHT: These predictions represent expert opinions, not guaranteed outcomes."
+  }
+}

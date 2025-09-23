@@ -1,0 +1,40 @@
+{
+  "forbidden": {
+    "political": {
+      "regex": "\\b(politic(s|al|ian)|democrat|republican|election|vote|ballot|congress|parliament)\\b",
+      "message": "Content contains political references which are not allowed"
+    },
+    "medical_advice": {
+      "regex": "\\b(medic(al|ine)|health advice|treatment|cure|diagnos(is|e)|prescri(be|ption))\\b",
+      "message": "Content contains medical advice which is not allowed"
+    },
+    "financial_advice": {
+      "regex": "\\b(invest( in| now)|financial advice|guaranteed returns|stock tips|get rich|passive income)\\b",
+      "message": "Content contains financial advice which is not allowed"
+    },
+    "fake_claims": {
+      "regex": "\\b(guarantee|proven|100%|always|never|best ever|miracle|instant results)\\b",
+      "message": "Content contains potentially fake or exaggerated claims"
+    }
+  },
+  "required": {
+    "brevity": {
+      "regex": "^.{10,280}$",
+      "message": "Content must be between 10 and 280 characters for X/Twitter"
+    },
+    "punchy": {
+      "regex": "\\b(🔥|👀|💡|🚀|📊|🤯|!)\\b",
+      "message": "Content must include at least one emoji or exclamation mark for emphasis"
+    },
+    "cta": {
+      "regex": "\\b(check out|learn more|read|click|visit|discover|find out|see|watch)\\b",
+      "message": "Content must include a clear call to action"
+    }
+  },
+  "disclaimer_required": {
+    "news_claims": {
+      "regex": "\\b(breaking news|just in|exclusive|report)\\b",
+      "disclaimer": "DISCLAIMER: This content represents trending topics and may not reflect verified news."
+    }
+  }
+}

@@ -1,0 +1,53 @@
+# Brand Guardrails Tests
+
+## Forbidden Content Tests
+
+### Political Content (Should Fail)
+"Our latest analysis on the upcoming election and how it affects startups."
+RESULT: FAIL - Content contains political references which are not allowed
+
+### Medical Advice (Should Fail)
+"This new supplement is the cure for entrepreneur burnout. Try it today!"
+RESULT: FAIL - Content contains medical advice which is not allowed
+
+### Financial Advice (Should Fail)
+"Invest now in these top 5 startups to guarantee returns in 2025!"
+RESULT: FAIL - Content contains financial advice which is not allowed
+
+### Fake Claims (Should Fail)
+"Our platform guarantees 100% success for all startups!"
+RESULT: FAIL - Content contains potentially fake or exaggerated claims
+
+## Required Elements Tests
+
+### Too Long (Should Fail)
+"This is a very long post that exceeds the character limit and goes on and on with unnecessary details that don't add value to the content but just make it longer than it should be which violates our brevity rule because we want all content to be concise and to the point so that readers can quickly understand the message without having to read through paragraphs of text."
+RESULT: FAIL - Content must be between 10 and 280 characters for X/Twitter
+
+### No Emphasis (Should Fail)
+"New startup funding report available now. Read it on our website."
+RESULT: FAIL - Content must include at least one emoji or exclamation mark for emphasis
+
+### No CTA (Should Fail)
+"Interesting trends in the venture capital space for 2025."
+RESULT: FAIL - Content must include a clear call to action
+
+## Disclaimer Required Tests
+
+### News Claim (Should Add Disclaimer)
+"Breaking news: Tech startup valuations reach all-time high!"
+RESULT: PASS WITH DISCLAIMER - DISCLAIMER: This content represents trending topics and may not reflect verified news.
+
+## Valid Content Tests
+
+### Valid Post (Should Pass)
+"🔥 Check out our latest report on startup funding trends! #MavericNews #Startups"
+RESULT: PASS - Content meets all requirements
+
+### Valid LinkedIn Post (Should Pass)
+"📊 **New Insights: AI in Venture Capital**
+
+Our team has analyzed how AI is transforming investment decisions. Learn more about these trends on our website.
+
+#MavericInsights #Technology"
+RESULT: PASS - Content meets all requirements
